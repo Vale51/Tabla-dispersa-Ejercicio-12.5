@@ -24,11 +24,11 @@ public class Ejercicio125TablaDispersa {
         TablaDispersa tabla = new TablaDispersa();
         
         while(menu!=0){
-            System.out.println("Elija una opcion: \n"); 
-            System.out.println("1. Cargar Casa rural \n"); 
-            System.out.println("2. Buscar Casa rural \n"); 
-            System.out.println("3. Eliminar Casa rural \n"); 
-            System.out.println("0. Salir \n");
+            System.out.println("Elija una opcion:"); 
+            System.out.println("1. Cargar Casa rural"); 
+            System.out.println("2. Buscar Casa rural"); 
+            System.out.println("3. Eliminar Casa rural"); 
+            System.out.println("0. Salir");
             
             menu = sc.nextInt();
             sc.nextLine();
@@ -41,15 +41,18 @@ public class Ejercicio125TablaDispersa {
                     break;
                     
                 case 2:
-                    System.out.println("Ingrese un codigo: \n"); 
+                    System.out.println("Ingrese un codigo:"); 
                     codigo = sc.nextLine();
-                    tabla.buscar(codigo);
+                    tabla.buscar(codigo).muestra();
                     break;
                     
                 case 3:
-                    System.out.println("Ingrese un codigo: \n"); 
+                    System.out.println("Ingrese un codigo:"); 
                     codigo = sc.nextLine();
                     tabla.eliminar(codigo);
+                    break;
+                    
+                case 0:
                     break;
             }
         }    

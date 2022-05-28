@@ -81,8 +81,12 @@ public class TablaDispersa {
     {
         int posicion;
         posicion = direccion(clave);
-        if (tabla[posicion] != null)
-        tabla[posicion].esAlta = false;
+        if (tabla[posicion] != null){
+            tabla[posicion].esAlta = false;
+            System.out.println("Casa Rural (clave: " + clave + ") eliminada");
+        }
+        
+        
     }
 
 }
